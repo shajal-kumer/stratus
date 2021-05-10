@@ -1,0 +1,66 @@
+// ======================================
+//  Partial Imports
+// ======================================
+
+// External 
+@import "external/_bootstrap.min.scss";
+@import "external/_owl.carousel.min.scss";
+// @import "external/_slicknav.min.scss";
+@import "external/_nice-select.scss";
+@import "external/_perfect-scrollbar.min.scss";
+@import "external/_jqueryUi.scss";
+@import "external/_aos.scss";
+@import "external/_slick.scss";
+@import "external/_magnific-popup.scss";
+@import "external/_flickity.min.scss";
+
+// Font Awesome
+@import "fontawesome/fontawesome.scss";
+@import "fontawesome/solid.scss";
+@import "fontawesome/brands.scss";
+@import "fontawesome/regular.scss";
+@import "fontawesome/light.scss";
+//@import "fontawesome/v4-shims.scss";
+//@import "fontawesome/duotone.scss";
+
+// Utilities
+@import 'helpers/variables';
+@import 'helpers/mixins';
+@import 'helpers/helpers';
+@import 'helpers/mediaquery';
+
+// Base fonts
+@import 'base/fonts';
+
+// Base Styles
+@import 'base/reset';
+@import 'base/common';
+
+// Layout Styles
+@import 'components/header';
+@import 'components/footer';
+
+// Components Styles
+@import 'components/button';
+@import 'components/color'; 
+@import 'components/modal'; 
+
+// Pages Styles
+@import 'pages/home';
+@import 'pages/listing';
+@import 'pages/cardetails';
+@import 'pages/contact';
+@import 'pages/finance';
+@import 'pages/buyonline';
+@import 'pages/blogcategory';
+@import 'pages/blogdetails';
+@import 'pages/favourite';
+@import 'pages/testimonials';
+@import 'pages/doc-sign';
+@import 'pages/order-status';
+//@import 'pages/part-exchange';
+@import 'pages/valuation';
+@import 'pages/finance-section';
+
+// Page modules
+@import 'pages/cardetailsPartex';

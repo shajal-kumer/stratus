@@ -1,0 +1,50 @@
+/*=========== Button CSS ==========*/
+
+.boxed-btn {
+    @extend %bgtransparent;
+    padding: 15px 45px 15px 28px;
+    font-weight: 700;
+    @extend %body-font;
+    @extend %primary-color;
+    border: 1px solid;
+    @extend %primary-border-color;
+    @extend %basetransition2;
+    @extend %uppercase;
+    @extend %posrelative;
+    @extend %textleft;
+    font-size: 14px;
+    letter-spacing: 1px;
+    min-width: 240px;
+    @include all-below-mobile-lg{
+        padding: 12px 30px;
+    }
+    &:hover {
+        @extend %white-color;
+        @extend %primary-border-color;
+        @extend %primary-bg-color;
+    }
+    i{
+        
+		font-size: 20px;
+        position: absolute;
+        right: 28px;
+        top: 25px;
+        margin-top: -10px;
+		@include all-below-mobile-lg{
+            font-size: 19px;
+            top: 22px;
+        }
+		// Commendted out becuase not working well on sign-doc page
+    }
+}
+
+// .bordered-btn {
+//     border: 2px solid #2A7D2E;
+//     font-size: 14px;
+//     font-weight: 400;
+//     line-height: 16px;
+//     background: transparent;
+//     &:hover {
+//         color: #154D32;
+//     }
+// }

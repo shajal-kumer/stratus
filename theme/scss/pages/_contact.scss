@@ -1,0 +1,127 @@
+/*-------------------------Contact Page CSS------------------------------*/ 
+.map{
+    height: 460px;
+    background-color: #dddddd;
+    @include all-below-mobile-lg{
+        height: 350px;
+    }
+}
+.header2{
+    .map{
+        height: 550px;
+        @include all-below-mobile-lg{
+            height: 350px;
+        }
+    }
+}
+
+.contact-form-wrap {
+    padding: 50px 0 90px;
+    @include all-below-med{
+        padding: 50px 0 60px;
+    }
+    .single-map-text {
+        @include all-mx-mobile{
+            margin-bottom: 30px;
+        }
+        .section-title h2 {
+            font-size: 34px;
+            @include all-below-med{
+                font-size: 28px;
+            }
+            @include all-below-mobile-lg{
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+        }
+        &.float-right{
+            @include all-mx-mobile{
+                float: none !important;
+            }
+        }
+        table{
+            tr{
+                td{
+                    &.openToday, &.openToday{
+                        @extend %primary-color;
+                        font-weight: 700;
+                    }
+                    padding-bottom: 5px;
+                    &:first-child {
+                        padding-right: 20px;
+                    }
+                }
+            }
+        }
+        .business-1{
+            h6{
+                margin-bottom: 10px;
+            }
+            .contact-number {
+                margin-top: 20px;
+                a {
+                    @extend %basetransition1;
+                    padding: 3px 0;
+                    @extend %displayblock;
+                    @extend %body-color;
+                    &:hover {
+                        @extend %secondary-color;
+                    }
+                    i {
+                        width: 15px;
+                        @extend %textcenter;
+                        margin-right: 6px;
+                    }
+                }
+            }
+        }
+        &.form-wrapper {
+            padding: 25px 20px 25px;
+            margin-top: -155px;
+            @extend %borderradius5;
+            @extend %primary-bg-color;
+            @extend %white-color;
+            margin-left: -30px;
+            @include all-below-med{
+                margin: 30px 0 0;
+            }
+            @include all-mx-mobile{
+                margin-top: 0px;
+            }
+            .section-title h2 {
+                @extend %white-color;
+                @extend %capitalize;
+                font-weight: 600;
+            }
+            .form-wrap {
+                label {
+                    @extend %white-color;
+                    font-size: 15px;
+                }
+                input {
+                    width: 100%;
+                }
+                .optIns {
+                    margin-top: 20px;
+                }
+                .allow-message {
+                    margin-top: 20px;
+                }
+                .boxed-btn {
+                    margin-top: 20px;
+					@extend %secondary-bg-color;
+					@extend %white-color;
+                    border-radius: 50px;
+                    padding: 15px 15px 15px 15px;
+                    min-width: 190px;
+                    text-align: center;
+                    &:hover{
+                        background: transparent;
+                        @extend %secondary-color;
+                        @extend %secondary-border-color;
+                    }
+                }
+            }
+        }
+    }
+}

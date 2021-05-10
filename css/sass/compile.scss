@@ -1,0 +1,31 @@
+// ======================================
+// 
+// ======================================
+
+
+// Custom Modules
+// We can add  'modules' here.  E.g., special homepage section:
+
+// Utilities
+@import 'helpers/variables';
+@import 'helpers/mixins';
+@import 'helpers/helpers';
+@import 'helpers/mediaquery';
+
+// base
+@import 'base/common';
+
+// Layout Styles
+@import 'components/header';
+@import 'components/footer';
+
+// Components Styles
+@import 'components/button';
+@import 'components/color'; 
+
+// Pages Styles
+@import 'pages/home';
+@import 'pages/make-carousel';
+
+// Client colour overrides
+@import 'client.scss';

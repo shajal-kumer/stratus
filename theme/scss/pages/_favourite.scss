@@ -1,0 +1,348 @@
+/*--------------Favourite CSS---------------*/ 
+.compare-form-area {
+    border-bottom: 1px solid #c5c5c5;
+    .section-title {
+        margin-bottom: 30px;
+        @include all-below-med{
+            margin-bottom: 20px;
+        }
+    }
+    .section-title-2 {
+        h2{
+            @include all-below-med{
+                font-size: 24px;
+            }
+            @include all-below-mobile-lg{
+                font-size: 22px;
+            }
+        }
+    }
+    .section-shape {
+        @include all-below-med{
+            bottom: -102px;
+        }
+        @include all-below-mobile-lg{
+            bottom: -89px;
+        }
+        @include all-mx-mobile{
+            bottom: -77px;
+        }
+    }
+    .compare-form {
+        margin-bottom: 35px;
+        background: #C6C6C4;
+        padding: 20px 25px;
+        @include all-below-med{
+            margin-bottom: 30px;
+        }
+        .single-compare-form {
+            flex-basis: 30%;
+            padding-right: 20px;
+            @include mx-desktops{
+                flex-basis: 28%;
+            }
+            @include all-below-med{
+                flex-basis: 50%;
+                padding-right: 15px;
+                margin-bottom: 20px;
+                &:nth-child(2){
+                    padding-right: 0;
+                    padding-left: 15px;
+                }
+            }
+            label {
+                font-size: 14px;
+                font-weight: 500;
+            }
+            .nice-select {
+                border: 1px solid $border-color;
+            }
+            .stock-dropdown-wrap{
+                &.active{
+                    .select-bar{
+                        i{
+                            transform: rotate(-180deg);
+                            
+                        }
+                    }
+                    .stock-dropdown{
+                        @extend %visible;
+						
+                    }
+                }
+                .ps.ps--active-x>.ps__scrollbar-x-rail, .ps.ps--active-y>.ps__scrollbar-y-rail {
+                    @extend %displayblock;
+                    @extend %secondary-bg-color;
+                }
+                .ps>.ps__scrollbar-x-rail, .ps>.ps__scrollbar-y-rail {
+                    opacity: 1;
+                }
+                .ps>.ps__scrollbar-y-rail>.ps__scrollbar-y {
+                    @extend %primary-bg-color;
+                    right: 4px;
+                    width: 6px;
+                }
+            }
+            &.vehicle {
+                flex-basis: 40%;
+                padding-right: 0;
+                @extend %posrelative;
+                @include mx-desktops{
+                    flex-basis: 44%;
+                }
+                @include all-below-med{
+                    flex-basis: 100%;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .category{
+        .section-title-2{
+            margin-bottom: 0;
+            margin-right: 100px;
+        }
+    }
+    .category-btn {
+        @include all-below-med{
+            display: flex;
+        }
+        @include all-mx-mobile{
+            display: block;
+        }
+        .boxed-btn {
+            padding: 11px 10px 11px 10px;
+            @extend %textcenter;
+            min-width: 190px;
+            margin-right: 10px;
+            font-weight: 500;
+            &:last-child{
+                margin-right: 0;
+            }
+            @include all-below-med{
+                width: 33.3333%;
+                min-width: auto;
+            }
+            @include all-mx-mobile{
+                min-width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+
+
+.select-bar {
+    border: 1px solid $border-color;
+    height: 50px;
+    line-height: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+    cursor: pointer;
+    background-color: #fff;
+    &:hover{
+        i{
+            @extend %primary-color;
+        }
+    }
+    i{
+        @extend %basetransition1;
+        font-size: 22px;
+        color: #ced4da;
+        @extend %posabsolute;
+        right: 20px;
+        top: 13px;
+    }
+}
+.stock-dropdown {
+    opacity: 0;
+    visibility: hidden;
+    @extend %posabsolute;
+    width: 100%;
+    right: 0;
+    @extend %white-bg-color;
+    top: 100%;
+    z-index: 6;
+    max-height: 240px;
+    @extend %basetransition2;
+    .single-stock-item {
+        @extend %posrelative;
+        height: 80px;
+        border-left: 1px solid $border-color;
+        border-bottom: 1px solid $border-color;
+        border-right: 1px solid $border-color;
+        padding: 11px 11px 11px 15px;
+        img {
+            float: left;
+            max-width: 80px;
+            margin-right: 10px;
+        }
+        h6 {
+            font-size: 16px;
+            font-weight: 500;
+            margin: 6px 0 2px;
+			width: calc(79% - 100px);
+			height: 18px;
+			overflow-y: hidden;
+        }
+        .price-tag {
+            font-weight: 700;
+            font-size: 18px;
+        }
+        .boxed-btn {
+            padding: 11px 15px 11px 40px;
+            min-width: unset;
+            @extend %posabsolute;
+            right: 27px;
+            top: 18px;
+            font-weight: 600;
+            font-size: 13px;
+            i {
+                left: 13px;
+                right: auto;
+                top: 21px;
+                @extend %basetransition2;
+            }
+            &:hover i {
+                @extend %secondary-color;
+            }
+        }
+    }
+}
+
+
+// .vehicle-comparison-area
+.vehicle-comparison-area .owl-carousel, .owl-carousel .owl-item, .vehicle-comparison-area .col, .vehicle-comparison-area .row, .featured-car-area .container{
+    position: static;
+}
+.vehicle-comparison-area {
+    padding: 140px 0 115px;
+    @include all-below-med{
+        padding: 110px 0 70px;
+    }
+    @include all-mx-mobile{
+        padding-top: 60px;
+    }
+    .section-title-2 {
+        @extend %posabsolute;
+        top: 8px;
+        left: 0;
+        right: 0;
+        z-index: 3;
+        @include mx-mobile-lg{
+            top: 5px;
+        }
+        @include all-mx-mobile{
+            position: relative;
+            top: 0;
+        }
+    }
+    .owl-nav {
+        div {
+            left: 0;
+            width: 44px;
+            height: 80px;
+            line-height: 80px;
+            border-radius: 0 5px 5px 0;
+            margin-top: -40px;
+            &.owl-next {
+                left: auto;
+                right: 0;
+                border-radius: 5px 0px 0px 5px;
+            }
+        }
+    }
+    .single-comparison-item {
+        .favourite-icon {
+            @extend %posabsolute;
+            right: 20px;
+            top: 20px;
+            width: 50px;
+            height: 44px;
+            background: #bfbfbf;
+            @extend %cursorpointer;
+            @extend %white-color;
+            @extend %textcenter;
+            @extend %basetransition1;
+            line-height: 48px;
+            font-size: 22px;
+            @extend %borderradius3;
+            &:hover {
+                @extend %secondary-color;
+                @extend %primary-bg-color;
+            }
+        }
+        .comparison-content {
+            border: 1px solid $border-color;
+            border-top: 0;
+            .comparison-content-inner {
+                padding: 18px 15px;
+                p {
+                    margin-bottom: 10px;
+					height: 43px;
+                }
+                h4 {
+                    font-size: 18px;
+                    margin: 0 0 5px;
+                }
+                .comparison-price {
+                    @extend %secondary-bg-color;
+                    @extend %borderradius5;
+                    padding: 10px 14px;
+                    @extend %uppercase;
+                    font-size: 12px;
+                    font-weight: 500;
+                    @extend %posrelative;
+                    &:after {
+                        @extend %pseudo;
+                        right: 50%;
+                        top: 0;
+                        width: 1px;
+                        @extend %h100;
+                        @extend %white-bg-color;
+                    }
+                    .price-tag {
+                        font-size: 18px;
+                        font-weight: 700;
+                        @extend %primary-color;
+                        @extend %displayblock;
+                        @extend %uppercase;
+                    }
+                }
+            }
+            //.results-car-meta
+            .results-car-meta{
+                .table {
+                    margin-bottom: 0;
+                    tr:nth-of-type(odd) {
+                        background: #F2F2F2;
+                    }
+                    td {
+                        font-size: 13px;
+                        @extend %uppercase;
+                        border: 0;
+                        padding: 10px 20px 10px 38px;
+                        @extend %posrelative;
+                        &:last-child {
+                            @extend %capitalize;
+                            font-size: 14px;
+                            width: 148px;
+                            @include all-mx-mobile{
+                                width: 131px;
+                            }
+                        }
+                        img, svg, i{
+                            left: 17px;
+                            top: 13px;
+                            font-size: 14px;
+                            width: 16px;
+                            @extend %posabsolute;
+                            @extend %textcenter;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

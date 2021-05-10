@@ -1,0 +1,239 @@
+/*============== Footer CSS ================*/
+// .footer-area 
+.footer-area {
+    @extend %primary-bg-color;
+    @extend %white-color;
+    font-size: 14px;
+    padding-top: 50px;
+    @include all-mx-mobile{
+        .col-md-3.col-sm-6 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+    &.padding-bottom{
+        @include all-mx-mobile{
+            padding-bottom: 50px;
+            &.show-searchbox, &.show-sidebar{
+                padding-bottom: 0;
+            }
+        }
+    }
+    .single-quick-link-item {
+        margin-bottom: 40px;
+        @include all-below-med{
+            margin-bottom: 30px;
+        }
+        @include all-below-mobile-lg{
+            text-align: center;
+        }
+        h5 {
+            font-size: 14px;
+            margin-bottom: 15px;
+            @extend %uppercase;
+        }
+        ul {
+            li {
+                a {
+                    @extend %white-color;
+                    opacity: .8;
+                    padding: 6px 0;
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+    // .footer-info-section
+    .footer-info-section {
+        padding: 50px 0 5px;
+        border-top: 1px solid #333333;
+        @include all-mx-mobile{
+            padding: 40px 0 35px;
+        }
+        .single-info-item {
+            color: #c5c5c5;
+            margin-bottom: 50px;
+            @include all-below-med{
+                margin-bottom: 30px;
+            }
+            @include all-below-mobile-lg{
+                text-align: center;
+            }
+            &.time{
+                @include all-mx-mobile{
+                    margin-bottom: 10px;
+                }
+            }
+            &.phone-number {
+                padding-left: 36px;
+                @include all-below-med{
+                    padding-left: 0px;
+                }
+                a{
+                    @extend %basetransition1;
+                }
+                &:hover{
+                    a{
+                        @extend %white-color;
+                    }
+                }
+            }
+            &.findus {
+                padding-left: 44px;
+                @include all-below-med{
+                    padding-left: 0px;
+                }
+                a{
+                    @extend %basetransition1;
+                }
+                &:hover{
+                    a{
+                        @extend %white-color;
+                    }
+                }
+            }
+            &.emailaddress {
+                padding-left: 45px;
+                @include all-below-med{
+                    padding-left: 0px;
+                }
+                a{
+                    @extend %basetransition1;
+                }
+                &:hover{
+                    a{
+                        @extend %white-color;
+                    }
+                }
+            }
+            h5 {
+                @extend %white-color;
+                font-size: 14px;
+                @extend %uppercase;
+            }
+            h6 {
+                @extend %white-color;
+                font-size: 12px;
+                margin-bottom: 5px;
+                @extend %uppercase;
+                @include mx-tablet{
+                    margin-left: 25px;
+                    margin-bottom: 10px;
+                }
+            }
+            a {
+                color: #c5c5c5;
+            }
+            .absolute-icon {
+                @extend %posabsolute;
+                left: 0;
+                top: -12px;
+                font-size: 40px;
+                @include mx-tablet{
+                    top: -12px;
+                    font-size: 23px;
+                }
+                @include all-below-mobile-lg{
+                    display: none;
+                }
+                .fa-map-marker-alt {
+                    font-size: 43px;
+                    @extend %posrelative;
+                    top: 3px;
+                    @include mx-tablet{
+                        font-size: 23px;
+                        top: 1px;
+                    }
+                }
+                .fa-envelope-open-text {
+                    font-size: 34px;
+                    top: -2px;
+                    @extend %posrelative;
+                    @include mx-tablet{
+                        font-size: 18px;
+                        top: -3px;
+                    }
+                }
+            }
+        }
+    }
+}
+.footer-social-icons {
+    a {
+        width: 35px;
+        height: 35px;
+        border: 1px solid #c5c5c5;
+        border-radius: 50px;
+        @extend %textcenter;
+        line-height: 34px;
+        font-size: 17px;
+        margin-right: 7px;
+        @extend %basetransition1;
+        @include mx-desktops{
+            margin-right: 3px;
+        }
+        &:hover {
+            @extend %secondary-bg-color;
+            @extend %secondary-border-color;
+            @extend %primary-color;
+        }
+    }
+}
+.copyright-section {
+    color: #c5c5c5;
+    padding: 29px 0;
+    border-top: 1px solid #333333;
+    @include all-mx-mobile{
+        display: block !important;
+        text-align: center;
+        padding: 20px 0;
+        .copyright-left{
+            margin-bottom: 15px;
+        }
+    }
+    a{
+        color: #c5c5c5;
+        &:hover {
+            @extend %white-color;
+        }
+    }
+    .ahq img {
+        max-width: 117px;
+        margin-top: -8px;
+        margin-left: 10px;
+        opacity: .7;
+        &:hover{
+            opacity: 1;
+        }
+    }
+}
+
+
+
+// scrollTop
+.scrollTop {
+    right: 2%;
+    bottom: -40px;
+    width: 40px;
+    height: 40px;
+    z-index: 9;
+    @extend %posfixed;
+    @extend %secondary-bg-color;
+    @extend %displayblock;
+    @extend %white-color;
+    @extend %textcenter;
+    @extend %basetransition2;
+    @extend %invisible;
+    font-size: 25px;
+    line-height: 40px;
+    &.scrollBtn{
+        @extend %visible;
+        bottom: 24px;
+    }
+    &:hover{
+        @extend %white-color;
+        @extend %primary-bg-color;
+    }
+}

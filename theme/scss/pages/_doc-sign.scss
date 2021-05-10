@@ -1,0 +1,122 @@
+// Styles used when presenting document fo signature, e.g., so-signature
+
+
+.ecom-pages {
+
+	padding: 30px 0 15px;
+
+	div#quoteCont {
+		background-color:#fff; 
+		padding: 0;
+		font-size: 15px;
+		line-height: 20px;
+		
+		.section b { font-weight: bold; }
+		
+		table { 
+			width:100%;
+			
+			tbody { 
+				tr {
+					td { 
+						
+						padding: 2px 3px;
+						vertical-align: top;
+						height: 29px;					
+						
+						img.logo { width: 100%; max-width: 250px; margin: 5px 0;  }
+						.docTitle { font-size: 30px; text-transform: uppercase; font-weight: 500; }
+						p.sigTitles { font-weight: 500; }
+						p.signer { font-weight: 500; margin:0; }
+						label { margin: 0; }
+						div.buttons { margin-top: 15px; }
+						
+						canvas {
+								position: relative;
+								margin: 1px;
+								margin-left: 0px;
+								border: 1px solid #3a87ad;
+								
+								@media (max-width: 575px) {
+									width: 100%;
+									max-width: 400px;
+								}
+							}
+						
+						// Critical!  eSign does not work if not set to display:none
+						#saveSignature {
+							display: none;
+						}
+						
+						.boxed-btn {
+							padding: 8px 15px;
+							margin-bottom: 15px;
+							
+							i { position: initial; }
+							
+						}					
+						
+					}
+					
+					td.hMed { height: 175px; }
+					td.hSml { height: 45px; }
+					td.compName { font-weight: 500; }
+					td.tel { padding-top: 15px; } 
+					
+				}
+			}
+		}
+
+
+		table.outer { 
+			td { 
+				padding: 0; 
+				table td { padding: 2px 3px; }
+			}
+		}
+
+		
+		table.boxed {
+
+			border-width: 1px;
+			border-style: solid;
+
+			th { 
+				font-weight: 500; 
+				color: #fff; 
+				padding: 3px; 
+			}
+		
+		}
+
+		table.section, .row.section [class^="col-"] { 
+			margin-bottom: 15px; 
+		}
+		
+		table.eSign {
+			border: 2px solid #ccc;
+		}
+
+		div.section .docSaveOuter {
+			border: 1px solid #ccc;
+			padding: 10px;
+			padding-top: 2px;
+			margin-bottom: 15px;
+			margin-right: 0px;
+			min-height: 81px;
+			background-color: rgba(0,0,0,0.05);
+			
+			input[type=checkbox] {
+				display: block;
+			}		
+			
+			label { font-weight: 500; }
+			
+		}
+		
+		
+		
+	}
+
+
+}

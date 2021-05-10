@@ -1,0 +1,35 @@
+/*=========== Button CSS ==========*/
+.boxed-btn {
+    padding: 17px 45px 17px 28px;
+    font-size: 16px;
+    i{
+        top: 29px;
+    }
+    &.style-2 {
+        padding: 13px 45px 13px 28px;
+        border: 0;
+        position: relative;
+        background: #fff;
+        color: #000;
+        i {
+            top: 25px;
+        }
+        &:after {
+            position: absolute;
+            left: -5px;
+            top: -5px;
+            width: 250px;
+            height: 59px;
+            content: "";
+            border: 1px solid #fff;
+            transition: all .5s ease;
+        }
+        &:hover {
+            background: #000;
+            color: #fff;
+            &:after {
+                border-color: #000;
+            }
+        }
+    }
+}

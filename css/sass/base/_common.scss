@@ -1,0 +1,89 @@
+body{
+    font-family: $primary-font;
+    color: #000000;
+}
+
+.gray-bg{
+    background-color: #F0F2F4;
+}
+
+.section-title {
+    font-size: 21px;
+    font-weight: 300;
+    h2 {
+        font-family: "Lexend",sans-serif;
+        margin-bottom: 10px;
+    }
+}
+
+.owl-nav {
+    div{
+        left: -80px;
+        width: 55px;
+        height: 66px;
+        line-height: 66px;
+        border-radius: 0px;
+        margin-top: -33px;
+        background: transparent;
+        border: 1px solid #252525;
+        color: #252525;
+        @include mx-large-desktops{
+            left: -60px;
+            width: 55px;
+            // margin-top: 2px;
+        }
+        @include brk-point-mm(1352px, 1500px){
+            // margin-top: -22px;
+        }
+        @include brk-point-mm(1200px, 1352px){
+            left: -34px;
+            width: 32px;
+            // margin-top: -38px;
+        }
+        @include special-extra-large-desktops{
+            left: -34px;
+            width: 32px;
+        }
+        @include mx-desktops{
+            left: -24px;
+            width: 40px;
+            // margin-top: -63px;
+        }
+        &:hover{
+            @extend %primary-bg-color;
+            @extend %white-color;
+        }
+        &.owl-next{
+            left: auto;
+            right: -80px;
+            border-radius: 0;
+            @include mx-large-desktops{
+                left: auto;
+                right: -60px;
+            }
+            @include brk-point-mm(1200px, 1352px){
+                left: auto;
+                right: -34px;
+            }
+            @include special-extra-large-desktops{
+                left: auto;
+                right: -34px;
+            }
+            @include mx-desktops{
+                left: auto;
+                right: -24px;
+            }
+        }
+    }
+}
+.custom-vh-100{
+    height: 100vh !important;
+    @include all-mx-mobile{
+        height: 80vh !important;
+    }
+}
+
+// .featured-car-area owl-nav css
+.make-carousel-area .owl-carousel, .make-carousel-area .owl-carousel .owl-item, .make-carousel-area .col, .make-carousel-area .row, .make-carousel-area .container-fluid {
+    position: static;
+}

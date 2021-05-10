@@ -1,0 +1,95 @@
+/*=============== Header CSS ==================*/
+.small-devices-header{
+    .mobile-phone-icon:hover {
+        background: #fff;
+        color: #000;
+        border-color: #fff;
+    }
+}
+.header {
+    height: auto;
+    &.mobile-header-style{
+        .header-area {
+            @include desktops{
+                background: rgb(0,0,0); 
+                background: linear-gradient(0deg, transparent 0%, rgba(0,0,0,0.8) 90%);
+            }
+            @include all-below-med{
+                .site-logo{
+                    height: auto;
+                    margin-bottom: 35px;
+                }
+            }
+        }
+        @include all-below-med{
+            padding: 60px 20px 20px;
+			background: #333;
+            .mainmenu ul li ul{
+                background: #333;
+            }
+            .mainmenu ul li>a, .mainmenu .menu-expand{
+                color: #fff;
+                opacity: .8;
+            }
+            .menu-close span{
+                background-color: #fff;
+            }
+            .header-phone{
+                margin-top: 40px;
+            }
+            
+		}
+    }
+}
+.header-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    height: 150px;
+    // display: flex;
+    // align-items: center;
+    background: transparent;
+    &.fixed{
+        background-color: #000 !important;
+    }
+    .header-phone {
+        a {
+            font-size: 24px;
+            font-weight: 700;
+            opacity: .8;
+            color: #fff;
+            font-family: $secondary-font;
+            @include mx-desktops{
+                width: 42px;
+                height: 42px;
+                border: 1px solid #fff;
+                text-align: center;
+                line-height: 42px;
+                border-radius: 50px;
+                span{
+                    display: none;
+                }
+            }
+            i {
+                font-size: 26px;
+                position: relative;
+                bottom: -1px;
+                @include mx-desktops{
+                    font-size: 20px;
+                }
+            }
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+.mainmenu ul li>a{
+    font-family: $secondary-font;
+    font-weight: 700;
+    @include mx-large-desktops{
+        padding: 44px 8px 45px;
+    }
+}

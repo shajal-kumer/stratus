@@ -1,0 +1,81 @@
+/*-------------part-exchange css-------------*/ 
+
+.part-exchange-inner-area{
+    padding: 60px 0 45px;
+    @include all-below-med{
+        padding: 10px 0 150px;
+    }
+    @include all-below-mobile-lg{
+        padding: 10px 0 100px;
+    }
+    .part-exchange-car{
+        @include all-below-med{
+            margin-bottom: 20px;
+        }
+    }
+    .section-title{
+        margin-bottom: 20px;
+    }
+    .boxed-btn{
+        min-width: auto;
+        @include all-below-mobile-lg{
+            padding: 15px 45px 15px 28px;
+        }
+    }
+}
+
+// .part-exchange-inner-area.noPadding {
+//     padding: 30px 0;
+// }
+
+
+// .reg-box
+.reg-box{
+    .reg-btn {
+        background-color: #484848;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 7px;
+        height: 54px;
+        width: 55px;
+        // border-radius: 5px 0 0 5px;
+        .dots-style {
+            width: 40px;
+            height: 40px;
+            display: block;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 39px;
+            font-weight: 700;
+            border: 1px dashed #fff;
+        }
+    }
+    .input-box{
+        input[type=text] {
+            height: 54px;
+            line-height: 54px;
+            padding: 12px 10px;
+            font-size: 30px;
+            text-transform: uppercase;
+            font-family: 'charles_wright_bold_capsRg', Arial, sans-serif;
+            font-weight: 700;
+            border-radius: 0;
+            width: 225px;
+            border: 1px solid #D9E0E5;
+            border-left: 0;
+            color: #484848;
+        }
+        ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            color: #484848;
+        }
+        ::-moz-placeholder { /* Firefox 19+ */
+            color: #484848;
+        }
+        :-ms-input-placeholder { /* IE 10+ */
+            color: #484848;
+        }
+        :-moz-placeholder { /* Firefox 18- */
+            color: #484848;
+        }
+    }
+}

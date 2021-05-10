@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Home</title>
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--Theme specific styles-->
+    <link href="./theme/css/antares.min.css" rel="stylesheet">
+    <link href="css/client.min.css" rel="stylesheet">
+
+    <!--Core jQuery-->
+    <script src="./theme/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="./theme/js/jquery-migrate-1.4.1.min.js"></script>
+</head>
+
+<body>
+
+    <!-- visible only below 991px viewports | small-devices-header starts -->
+    <div class="small-devices-header d-block d-lg-none">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <a class="mobile-phone-icon" href="tel:01252957975"><i class="fas fa-phone-alt"></i></a>
+                </div>
+                <div class="col">
+                    <div class="logo d-flex align-items-center justify-content-center">
+                        <a href="#"><img src="img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mobile-menu-trigger trigger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- small-devices-header ends -->
+
+    <div class="spacer d-block d-lg-none"></div>
+
+    <!-- header starts -->
+    <div class="off-canvas-overlay d-block d-lg-none"></div>
+    <header class="header mobile-header-style">
+        <div class="menu-close d-block d-lg-none">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+        </div>
+        <div class="header-area d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between">
+                        <div class="site-logo d-flex align-items-center">
+                            <a href="index.html">
+                                <img src="img/logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="mainmenu off-canvas-nav text-right">
+                            <ul>
+                                <li><a href="#">Showroom</a></li>
+                                <li class="menu-item-has-children"><a href="#">Products</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Dropdown Menu</a></li>
+                                        <li><a href="#">Dropdown Menu</a></li>
+                                        <li><a href="#">Dropdown Menu</a></li>
+                                        <li><a href="#">Dropdown Menu</a></li>
+                                        <li><a href="#">Dropdown Menu</a></li>
+                                        <li><a href="#">Dropdown Menu</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Servicing</a></li>
+                                <li><a href="#">Finance</a></li>
+                                <li><a href="#">Sell Your Car</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="header-phone d-flex align-items-center justify-content-center justify-content-lg-end">
+                            <a href="tel:01252957975"><i class="fal fa-phone-volume"></i> <span>01252 957975</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header ends -->
+
+    <!-- homepage-slider-area starts -->
+
+    <section class="homepage-slider-area">
+        <div class="hero-video overflow-hidden position-relative">
+            <div class="hero-bg" style="background-image: url(img/stock-footage-still.jpg);"></div>
+
+            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/qZjaytzyH44?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=qZjaytzyH44" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe> -->
+
+
+            <div class="video-background">
+                <div class="video-foreground">
+                    <div id="player"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Hide slider text for now -->
+        <!-- <div class="homepage-slides-wrapper custom-vh-100">
+                <div class="owl-carousel homepage-slides custom-vh-100">
+                    <div class="single-slide-item custom-vh-100 d-flex align-items-center justify-content-center">
+                        <div class="h-auto slide-content  text-center">
+                            <h2>Over 200<br /> Prestige Cars in Stock</h2>
+                            <h4>Visit us on-site or order online</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h6>500+ 5-Star Reviews</h6>
+                        </div>
+                    </div>
+                    <div class="single-slide-item custom-vh-100 d-flex align-items-center justify-content-center">
+                        <div class="h-auto slide-content  text-center">
+                            <h2>Over 200<br /> Prestige Cars in Stock</h2>
+                            <h4>Visit us on-site or order online</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h6>500+ 5-Star Reviews</h6>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+
+
+    </section>
+    <!-- homepage-slider-area ends -->
+    <!-- quick-search-form-wrapper ends -->
+    <section class="stock-search-area">
+        <div class="container">
+            <div class="row">
+                <div class="col search-container d-flex justify-content-between  align-items-end flex-wrap flex-lg-nowrap">
+                    <div class="single-stock-search select-make">
+                        <label for="selectmake">Select Make</label>
+                        <select name="selectmake" id="selectmake">
+                            <option value="0">All Makes</option>
+                            <option value="1">Make 1</option>
+                            <option value="2">Make 2</option>
+                            <option value="3">Make 3</option>
+                            <option value="4">Make 4</option>
+                            <option value="5">Make 5</option>
+                        </select>
+                    </div>
+                    <div class="single-stock-search select-model">
+                        <label for="selectmake">Select Model</label>
+                        <select name="selectmake" id="selectmake">
+                            <option value="0">All Models</option>
+                            <option value="1">Model 1</option>
+                            <option value="2">Model 2</option>
+                            <option value="3">Model 3</option>
+                            <option value="4">Model 4</option>
+                            <option value="5">Model 5</option>
+                        </select>
+                    </div>
+                    <div class="single-stock-search finance-range-slider-3">
+                        <div class="slider-labels position-relative">
+                            <span class="min-text">Min Price</span>
+                            <span class="max-text">Max Price</span>
+                        </div>
+                        <div id="range-slider-3" class="pm-range-slider"></div>
+                        <div class="slider-price position-relative">
+                            <input type="text" class="min-price" readonly>
+                            <input type="text" class="max-price" id="max-price" readonly>
+                        </div>
+                    </div>
+                    <div class="single-stock-search select-budget payment-method text-center">
+                        <div class="switcher-btn">
+                            <label class="switch position-relative">
+                                <input type="checkbox" checked>
+                                <span class="switch-slider round"><span class="cash">Cash</span> <span class="monthly">Monthly</span></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="single-stock-search search-btn text-right">
+                        <button class="boxed-btn style-2" type="submit" value="submit"><i class="far fa-search"></i> Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- stock-search-area ends -->
+
+    <!-- brand-carousel-area starts -->
+    <section class="make-carousel-area overflow-hidden">
+        <div class="owl-carousel brand-carousel-wrap">
+            <div style="background-image: url(./img/brand-bg-1.jpg);" class="single-brand-item d-flex align-items-center justify-content-center position-relative">
+                <span><img class="owl-lazy" data-src="img/make/1.png" alt=""></span>
+            </div>
+            <div style="background-image: url(./img/brand-bg-2.jpg);" class="single-brand-item d-flex align-items-center justify-content-center position-relative">
+                <span><img class="owl-lazy" data-src="img/make/2.png" alt=""></span>
+            </div>
+            <div style="background-image: url(./img/brand-bg-3.jpg);" class="single-brand-item d-flex align-items-center justify-content-center position-relative">
+                <span><img class="owl-lazy" data-src="img/make/3.png" alt=""></span>
+            </div>
+            <div style="background-image: url(./img/brand-bg-4.jpg);" class="single-brand-item d-flex align-items-center justify-content-center position-relative">
+                <span><img class="owl-lazy" data-src="img/make/4.png" alt=""></span>
+            </div>
+            <div style="background-image: url(./img/brand-bg-5.jpg);" class="single-brand-item d-flex align-items-center justify-content-center position-relative">
+                <span><img class="owl-lazy" data-src="img/make/5.png" alt=""></span>
+            </div>
+            <div style="background-image: url(./img/brand-bg-1.jpg);" class="single-brand-item d-flex align-items-center justify-content-center position-relative">
+                <span><img class="owl-lazy" data-src="img/make/1.png" alt=""></span>
+            </div>
+            <div style="background-image: url(./img/brand-bg-2.jpg);" class="single-brand-item d-flex align-items-center justify-content-center position-relative">
+                <span><img class="owl-lazy" data-src="img/make/2.png" alt=""></span>
+            </div>
+            <div style="background-image: url(./img/brand-bg-3.jpg);" class="single-brand-item d-flex align-items-center justify-content-center position-relative">
+                <span><img class="owl-lazy" data-src="img/make/3.png" alt=""></span>
+            </div>
+        </div>
+    </section>
+    <!-- brand-carousel-area ends -->
+
+    <!-- featured-area starts -->
+    <section class="featured-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 featured-car-wrap">
+                    <div class="featured-car-wrap">
+                        <div class="owl-carousel featured-car-carousel">
+                            <div class="single-featured-item">
+                                <a href="#" class="featured-car position-relative">
+                                    <img class="owl-lazy" data-src="img/featured-car-1.jpg" alt="">
+                                </a>
+                                <div class="featured-content">
+                                    <h4>AUDI A6 AVANT</h4>
+                                    <h6>S LINE AVANT S TRONIC QUATTRO</h6>
+                                    <h2>£19,490 <span><strong>£372</strong> per month</span></h2>
+                                    <a href="#" class="boxed-btn">View Details <i class="fal fa-long-arrow-right"></i></a>
+                                </div>
+                            </div><!-- single-featured-item ends -->
+                            <div class="single-featured-item">
+                                <a href="#" class="featured-car position-relative">
+                                    <img class="owl-lazy" data-src="img/featured-car-2.jpg" alt="">
+                                </a>
+                                <div class="featured-content">
+                                    <h4>AUDI A6 AVANT</h4>
+                                    <h6>S LINE AVANT S TRONIC QUATTRO</h6>
+                                    <h2>£19,490 <span><strong>£372</strong> per month</span></h2>
+                                    <a href="#" class="boxed-btn">View Details <i class="fal fa-long-arrow-right"></i></a>
+                                </div>
+                            </div><!-- single-featured-item ends -->
+                            <div class="single-featured-item">
+                                <a href="#" class="featured-car position-relative">
+                                    <img class="owl-lazy" data-src="img/featured-car-3.jpg" alt="">
+                                </a>
+                                <div class="featured-content">
+                                    <h4>AUDI A6 AVANT</h4>
+                                    <h6>S LINE AVANT S TRONIC QUATTRO</h6>
+                                    <h2>£19,490 <span><strong>£372</strong> per month</span></h2>
+                                    <a href="#" class="boxed-btn">View Details <i class="fal fa-long-arrow-right"></i></a>
+                                </div>
+                            </div><!-- single-featured-item ends -->
+                            <div class="single-featured-item">
+                                <a href="#" class="featured-car position-relative">
+                                    <img class="owl-lazy" data-src="img/featured-car-2.jpg" alt="">
+                                </a>
+                                <div class="featured-content">
+                                    <h4>AUDI A6 AVANT</h4>
+                                    <h6>S LINE AVANT S TRONIC QUATTRO</h6>
+                                    <h2>£19,490 <span><strong>£372</strong> per month</span></h2>
+                                    <a href="#" class="boxed-btn">View Details <i class="fal fa-long-arrow-right"></i></a>
+                                </div>
+                            </div><!-- single-featured-item ends -->
+                        </div>
+                    </div>
+
+                    <!-- services-content starts -->
+                    <div class="services-content mt-5 pt-5">
+                        <a href="#" class="single-service-box position-relative">
+                            <img class="lazy" src="img/loading.gif" data-src="./img/service-image-1.jpg" alt="">
+                            <div class="service-inner-content">
+                                <h6>Online Showroom </h6>
+                                <button type="button" class="boxed-btn style-2">View Stock <i class="fal fa-long-arrow-right"></i></button>
+                            </div>
+                        </a>
+                        <a href="#" class="single-service-box position-relative">
+                            <img class="lazy" src="img/loading.gif" data-src="./img/service-image-2.jpg" alt="">
+                            <div class="service-inner-content">
+                                <h6>Competitive Finance</h6>
+                                <button type="button" class="boxed-btn style-2">View Stock <i class="fal fa-long-arrow-right"></i></button>
+                            </div>
+                        </a>
+                        <a href="#" class="single-service-box position-relative">
+                            <img class="lazy" src="img/loading.gif" data-src="./img/service-image-3.jpg" alt="">
+                            <div class="service-inner-content">
+                                <h6>Servicing & Mot</h6>
+                                <button type="button" class="boxed-btn style-2">View Stock <i class="fal fa-long-arrow-right"></i></button>
+                            </div>
+                        </a>
+                        <a href="#" class="single-service-box position-relative">
+                            <img class="lazy" src="img/loading.gif" data-src="./img/service-image-4.jpg" alt="">
+                            <div class="service-inner-content">
+                                <h6>Sell Your Car</h6>
+                                <button type="button" class="boxed-btn style-2">View Stock <i class="fal fa-long-arrow-right"></i></button>
+                            </div>
+                        </a>
+                    </div><!-- services-content ends -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- featured-area ends -->
+
+    <!-- about-us-area starts -->
+    <section class="about-us-area gray-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-6">
+                    <div class="section-title">
+                        <h2>Welcome to Stratus Cars</h2>
+                    </div>
+                    <p>From our purpose built showroom near Hartley Wintney, in Hook, Hampshire we pride ourselves in offering used cars for sale at very high standards. Our experienced and knowledgeable staff are on hand to answer any questions you may have and we offer a comfortable no pressure sales environment.</p>
+                    <p>We offer parts & labour warranties on any car sold, with extended warranties available. Stratus also offer full workshop facilities with servicing, MOT’s and diagnostics available on all makes of car.</p>
+                    <p>We have an extensive range of used hatchbacks, saloons, people carriers and 4 x 4’s. With up to 90 cars in stock at one time we are able to ensure we always have a car to satisfy any requirement. All cars offered for sale are presented to the highest standard, with pre sales checks, mileages guaranteed and HPI checks done.</p>
+                    <a href="#" class="boxed-btn">Read More <i class="fal fa-long-arrow-right"></i></a>
+                </div>
+                <div class="col-lg-4 col-md-6 team-pic">
+                    <img class="lazy" src="img/loading.gif" data-src="img/team.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about-us-area ends -->
+
+    <!-- reviews-area starts -->
+    <section class="reviews-area">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="section-title text-center">
+                        <h2>Customer Reviews</h2>
+                        <p>See what our customers are saying</p>
+                    </div>
+                    <div class="owl-carousel reviews-wrapper-box">
+                        <div class="single-review-item position-relative">
+                            <span class="quote left"><i class="fas fa-quote-left"></i></span>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>First Class Service</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor ut incididunt aliqua. nostrud exercitation text ullamco laboris nisi ut aliquip ex lorem commodo consequat. Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor ut incididunt aliqua. nostrud exercitation text. ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <h6><strong>Lauren –</strong> Basingstoke</h6>
+                            <span class="quote right"><i class="fas fa-quote-right"></i></span>
+                        </div><!-- single-review-item ends -->
+                        <div class="single-review-item position-relative">
+                            <span class="quote left"><i class="fas fa-quote-left"></i></span>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>Helpful, kind and caring</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor ut incididunt aliqua. nostrud exercitation text ullamco laboris nisi ut aliquip ex lorem commodo consequat. Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor ut incididunt aliqua. nostrud exercitation text.
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            <h6><strong>Peter S –</strong> Eastleigh</h6>
+                            <span class="quote right"><i class="fas fa-quote-right"></i></span>
+                        </div><!-- single-review-item ends -->
+                        <div class="single-review-item position-relative">
+                            <span class="quote left"><i class="fas fa-quote-left"></i></span>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>Fantastic Experience</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor ut incididunt aliqua. nostrud exercitation text ullamco laboris nisi ut aliquip ex lorem commodo consequat. Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor ut incididunt aliqua. nostrud exercitation text. ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <h6><strong>Robert –</strong> Guildford</h6>
+                            <span class="quote right"><i class="fas fa-quote-right"></i></span>
+                        </div><!-- single-review-item ends -->
+                        <div class="single-review-item position-relative">
+                            <span class="quote left"><i class="fas fa-quote-left"></i></span>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>First Class Service</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor ut incididunt aliqua. nostrud exercitation text ullamco laboris nisi ut aliquip ex lorem commodo consequat. Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor ut incididunt aliqua. nostrud exercitation text. ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <h6><strong>Lauren –</strong> Basingstoke</h6>
+                            <span class="quote right"><i class="fas fa-quote-right"></i></span>
+                        </div><!-- single-review-item ends -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- reviews-area ends -->
+
+    <!-- footer-area starts -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="newsletter-signup">
+                        <div class="newsletter-title mb-3 text-center">
+                            <h2 class="mb-1">Newsletter Sign-up</h2>
+                            <p class="text-uppercase">Weekly stock updates to your inbox</p>
+                        </div>
+                        <div class="position-relative">
+                            <i class="fal fa-envelope position-absolute"></i>
+                            <input type="email" placeholder="Enter Your Email Address">
+                            <button class="text-uppercase text-white position-absolute" type="submit" value="submit">Subscribe</button>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap flex-lg-nowrap justify-content-between">
+                        <div class="single-quick-link-item order-1 order-lg-0">
+                            <h5>Quick Links</h5>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Showroom</a></li>
+                                <li><a href="#">Products</a></li>
+                                <li><a href="#">Servicing</a></li>
+                                <li><a href="#">Finance</a></li>
+                                <li><a href="#">Sell Your Car</a></li>
+                                <li><a href="#">Part Exchange</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div><!-- single-quick-link-item ends -->
+                        <div class="single-quick-link-item order-2 order-lg-1">
+                            <h5>Find What You're Looking For</h5>
+                            <ul>
+                                <li><a href="#">Used Audi</a></li>
+                                <li><a href="#">Used BMW</a></li>
+                                <li><a href="#">Used Mercedes</a></li>
+                                <li><a href="#">Used Land Rover</a></li>
+                                <li><a href="#">Used Ford</a></li>
+                                <li><a href="#">Used Honda</a></li>
+                                <li><a href="#">Used Kia</a></li>
+                                <li><a href="#">Used Jaguar</a></li>
+                            </ul>
+                        </div><!-- single-quick-link-item ends -->
+                        <div class="single-quick-link-item social-icon-box order-0 order-lg-3">
+                            <div class="social-icon-box-inner d-flex align-items-center justify-content-center d-lg-block">
+                                <h5>Follow us</h5>
+                                <a href="#" class="footer-social facebook d-flex align-items-center">
+                                    <span><i class="fab fa-facebook-f"></i></span>
+                                    <span class="face ml-2">Facebook</span>
+                                </a>
+                                <a href="#" class="footer-social twitter d-flex align-items-center">
+                                    <span><i class="fab fa-twitter"></i></span>
+                                    <span class="twi ml-2">Twitter</span>
+                                </a>
+                            </div>
+                        </div><!-- single-quick-link-item ends -->
+                    </div>
+                    <div class="footer-info-section d-flex flex-wrap flex-lg-nowrap justify-content-between">
+                        <div class="single-info-item phone-number position-relative">
+                            <a href="tel:01252957975">
+                                <span class="absolute-icon"><i class="fas fa-mobile-alt"></i></span>
+                                <h6>Give us a call</h6>
+                                01252 957975
+                            </a>
+                        </div>
+                        <div class="single-info-item findus position-relative">
+                            <a href="#">
+                                <span class="absolute-icon"><i class="fal fa-map-marker-alt"></i></span>
+                                <h6>Find us</h6>
+                                <p>Wintney Barn, Taplins Farm Lane, Hartley Wintney, Hook,<br />
+                                    United Kingdom</p>
+                            </a>
+                        </div>
+                        <div class="single-info-item emailaddress position-relative">
+                            <a href="mailto:sales@stratuscars.co.uk">
+                                <span class="absolute-icon"><i class="fal fa-envelope-open-text"></i></span>
+                                <h6>send us an email</h6>
+                                sales@stratuscars.co.uk
+                            </a>
+                        </div>
+                    </div>
+                    <div class="opening-hours-content d-flex flex-wrap flex-md-nowrap justify-content-center justify-content-md-between">
+                        <div class="left">
+                            <strong>Open Hours</strong> Monday - Saturday 9am - 6pm <span class="bar">|</span> Sunday - 10am - 4pm
+                        </div>
+                        <div class="right">
+                            <a href="#">Policies</a> <span class="bar">|</span>
+                            <a href="#">Cookie Preferences</a>
+                        </div>
+                    </div>
+                    <div class="copyright-section d-flex flex-wrap flex-md-nowrap justify-content-center justify-content-md-between">
+                        <div class="copyright-left">
+                            <p>Copyright &copy; Stratus Cars . All rights reserved</p>
+                        </div>
+                        <div class="copyright-right">
+                            <span class="ahq">
+                                Designed &amp; Powered by
+                                <a href="#"><img src="img/autohq.png" alt="Car Dealer Websites"></a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer-area ends -->
+
+    <a href="#" class="scrollTop d-none d-lg-block"><i class="fal fa-angle-up"></i></a>
+
+    <!--Libraries-->
+    <script src="./theme/js/bootstrap.bundle.min.js"></script>
+
+    <!--Plugins-->
+    <script src="./theme/js/perfect-scrollbar.jquery.min.js"></script>
+    <!--Should be used, only which pages have select dropdown-->
+    <script src="./theme/js/jquery.nice-select.min.js"></script>
+    <!--Should be used, only which pages have select dropdown-->
+    <script src="./theme/js/owl.carousel.min.js"></script>
+    <!--Should be used, only which pages have Owl-Carousel Slider-->
+    <script src="./theme/js/owl.lazyload.js"></script>
+    <!--For all pages - owl lazy load images-->
+    <!-- <script src="../theme/js/aos.js"></script> -->
+    <!--Should be used, only for homepage-->
+    <script src="./theme/js/jqueryUI.js"></script>
+    <!--Should be used, only which pages Range/Price Slider-->
+    <!-- <script src="../theme/js/jquery.slicknav.min.js"></script> -->
+    <!--For all pages - Mobile menu js-->
+    <script src="./theme/js/jquery.magnific-popup.min.js"></script>
+    <!--Should be used, only which pages have PopUp Image/Video-->
+    <script src="./theme/js/jquery.sticky.js"></script>
+    <!--Should be used, only on VDP page-->
+    <script src="./theme/js/jquery.unveil.js"></script>
+    <!--For all pages - Image preloading JS-->
+    <script src="./theme/js/flickity.pkgd.min.js"></script>
+    <!--For VDP page only - car slider-->
+
+    <!--Active & Custom JS-->
+    <script src="./theme/js/main.js"></script>
+    <script src="./js/stratus.js"></script>
+
+    <!-- JS code for Iframe video  -->
+    <script>
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        var player;
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '390',
+                width: '640',
+                // Replace the YouTube video ID below
+                videoId: 'HlI4JnKrwzA',
+                events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange,
+                    onStateChange: function (e) {
+                        if (e.data === YT.PlayerState.ENDED) {
+                            player.playVideo();
+                        }
+                    }
+                }
+            });
+        }
+
+        function onPlayerReady(event) {
+            event.target.playVideo();
+            event.target.mute();
+        }
+
+        var done = false;
+        function onPlayerStateChange(event) {
+            if (event.data == YT.PlayerState.PLAYING && !done) {
+                setTimeout(stopVideo, 6000);
+                done = true;
+            }
+        }
+        function stopVideo() {
+            player.stopVideo();
+        }
+    </script>
+</body>
+
+</html>

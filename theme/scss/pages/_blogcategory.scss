@@ -1,0 +1,109 @@
+/*--------------Blog Category CSS---------------*/ 
+// .blog-category-area
+.header2 .blog-category-area, .header2 .blog-details-area, .header2 .testimonials-wrapper, .header2 .compare-form-area {
+    padding-top: 140px;
+    @include all-below-med{
+        padding-top: 50px;
+    }
+}
+.header2{
+    .banner-area {
+        .banner-content{
+            margin-top: 0;
+        }
+    }
+}
+.blog-category-area {
+    .section-title {
+        margin-bottom: 50px;
+    }
+    // .single-blog-category
+    .single-blog-category {
+        margin-bottom: 30px;
+        display: block;
+        .blog-thumb {
+            img {
+                @extend %w100;
+                @extend %basetransition1;
+            }
+        }
+        &:hover .blog-thumb img {
+            transform: scale(1.1);
+        }
+        .blog-category-content {
+            left: 0;
+            bottom: 0;
+            background: #00000080;
+            @extend %white-color;
+            @extend %posabsolute;
+            @extend %w100;
+            height: 80px;
+            h5 {
+                font-size: 18px;
+                margin: 0px 122px 0 20px;
+                font-weight: 500;
+                line-height: 1.4;
+                @include mx-desktops{
+                    margin: 0px 90px 0 20px;
+                }
+            }
+            span {
+                @extend %posabsolute;
+                right: 20px;
+                top: 50%;
+                width: 50px;
+                height: 40px;
+                background: #2A2E37;
+                line-height: 40px;
+                font-size: 20px;
+                @extend %displayinline;
+                @extend %borderradius5;
+                @extend %textcenter;
+                @extend %basetransition1;
+                transform: translate(0px, -50%);
+                &:hover {
+                    @extend %secondary-bg-color;
+                    @extend %white-color;
+                }
+            }
+        }
+    }
+    // .pagination-wrap
+    .pagination-wrap {
+        &.bottom{
+            border-top: 1px solid #E5E5E5;
+            margin-top: 70px;
+            padding: 60px 0 20px;
+            @include all-below-med{
+                margin-top: 30px;
+                padding: 50px 0 20px;
+            }
+            @include all-below-mobile-lg{
+                text-align: center;
+            }
+        }
+        ul {
+            li {
+                @extend %displayinline;
+                margin-right: 4px;
+                @include all-below-mobile-lg{
+                    margin-bottom: 8px;
+                }
+                a {
+                    background: #E9E9E9;
+                    padding: 8px 20px;
+                    font-weight: 400;
+                    font-size: 15px;
+                    @extend %displayblock;
+                    @extend %uppercase;
+                    @extend %borderradius5;
+                    @extend %basetransition1;
+                }
+                &:hover a, &.active a {
+                    @extend %primary-bg-color;
+                    @extend %white-color;
+                }
+            }
+        }
+    }
+}

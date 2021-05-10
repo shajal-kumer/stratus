@@ -1,0 +1,222 @@
+/*============== Footer CSS ================*/
+.footer-area {
+    background: #262626;
+	.newsletter-signup {
+		width: 730px;
+		margin: 0 auto;
+		margin-bottom: 50px;
+		@include all-below-med{
+			width: 490px;
+			margin-bottom: 40px;
+		}
+		@include all-below-mobile-lg{
+			width: 100%;
+		}
+		i {
+			left: 20px;
+			top: 50%;
+			color: #4B4B4B;
+			font-size: 26px;
+			transform: translate(0px, -50%);
+			@include all-mx-mobile{
+				left: 10px;
+			}
+		}
+		input {
+			@extend %w100;
+			border-radius: 0;
+			height: 55px;
+			padding: 13px 170px 13px 56px;
+			@include all-mx-mobile{
+				padding: 13px 115px 13px 40px;
+			}
+		}
+		button {
+			right: 0;
+			top: 0;
+			border: 0;
+			background: #000;
+			height: 55px;
+			width: 150px;
+			font-weight: 700;
+			@include all-mx-mobile{
+				width: 105px;
+			}
+		}
+		.newsletter-title {
+			font-size: 16px;
+			font-weight: 400;
+			h2 {
+				font-size: 30px;
+			}
+		}
+	}
+}
+
+
+
+
+.footer-area {
+	.single-quick-link-item {
+		@include all-below-med{
+			flex-basis: 50%;
+			margin-bottom: 40px;
+			&.social-icon-box{
+				flex-basis: 100%;
+				h5, a{
+					margin: 0 10px;
+				}
+				@include all-mx-mobile{
+					margin: 0 0 10px;
+				}
+			}
+		}
+		@include all-mx-mobile{
+			&.social-icon-box{
+				h5, a{
+					margin: 0 0 10px;
+				}
+				margin-bottom: 25px;
+			}
+		}
+		.social-icon-box-inner{
+			@include all-mx-mobile{
+				flex-wrap: wrap;
+    			flex-direction: column;
+			}
+		}
+		@include all-below-mobile-lg{
+			flex-basis: 100%;
+		}
+		h5 {
+			font-size: 18px;
+			text-transform: capitalize;
+		}
+		ul {
+			column-count: 2;
+			li {
+				margin-right: 90px;
+				@include all-mx-desktops{
+					margin-right: 20px;
+				}
+			}
+		}
+		.footer-social {
+			width: 180px;
+			@extend %white-bg-color;
+			color: #0b345e;
+			height: 30px;
+			@extend %uppercase;
+			font-size: 14px;
+			font-weight: 600;
+			margin-bottom: 12px;
+			.face, .twi{
+				margin-top: 2px;
+			}
+			i {
+				background-color: #000;
+				width: 40px;
+				@extend %white-color;
+				height: 30px;
+				font-size: 18px;
+				padding: 7px 0 0 14px;
+			}
+			@include mx-mobile-lg{
+				width: 148px;
+			}
+			@include all-mx-mobile{
+				margin-bottom: 20px;
+				margin-right: 20px;
+			}
+		}
+		// .footer-social.facebook i {
+		// 	background-color: #225E9A;
+		// }
+		// .footer-social.twitter i {
+		// 	background-color: #1da1f2;
+		// }
+	}
+	.footer-info-section {
+		border-color: #404040;
+		padding: 35px 0 5px;
+		// @include mx-tablet{
+		// 	justify-content: center !important;
+		//    }
+		.single-info-item {
+			color: #c5c5c5;
+			margin-bottom: 20px;
+			
+			@include all-below-mobile-lg{
+				width: 100%;
+			}
+		}
+	}
+	.opening-hours-content {
+		background: #222222;
+		padding: 20px 30px;
+		@include all-below-mobile-lg{
+			padding: 20px 10px;
+			// justify-content: center !important;
+		}
+		.left {
+			color: #c5c5c5;
+			strong {
+				color: #fff;
+				opacity: 1;
+				font-weight: 700;
+				text-transform: uppercase;
+				margin-right: 10px;
+			}
+			.bar {
+				margin: 0 50px;
+				@include all-below-mobile-lg{
+					margin: 0 5px;
+				}
+			}
+		}
+		.right {
+			@include mx-tablet{
+				width: 360px;
+			}
+			@include all-below-mobile-lg{
+				margin-top: 10px;
+			}
+			a {
+				color: #fff;
+				opacity: .7;
+				&:hover {
+					opacity: 1;
+				}
+			}
+			.bar {
+				margin: 0 10px;
+				@include all-below-mobile-lg{
+					margin: 0 5px;
+				}
+			}
+		}
+	}
+	.copyright-section {
+		color: #c5c5c5;
+		padding: 24px 0 15px;
+		border-top: 0;
+		@include all-below-mobile-lg{
+			.copyright-right{
+				margin-top: 15px;
+			}
+		}
+	}
+}
+
+.scrollTop {
+    &.scrollBtn {
+		background-color: #fff;
+		color: #000;
+		border: 1px solid #000;    
+	}
+    &.scrollBtn:hover{
+		background-color: #000;
+		color: #fff;
+		border: 1px solid #fff;
+    }
+}

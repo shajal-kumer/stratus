@@ -1,0 +1,189 @@
+/*================Finance Page CSS===============*/
+// .banner-area
+.banner-area, .banner-area .row {
+    height: 550px;
+    @include all-below-med{
+        height: 400px;
+    }
+}
+.absolute-photo {
+    @extend %posabsolute;
+    right: 0;
+    bottom: -56px;
+}
+.banner-area {
+    @extend %backgroundimage;
+    @extend %zindex2;
+    &:after {
+        @extend %pseudo;
+        left: 0;
+        top: 0;
+        @extend %w100;
+        @extend %h100;
+        background-color: #000000;
+        opacity: .7;
+        z-index: -1;
+    }
+    .absolute-photo {
+        @include mx-desktops{
+            max-width: 600px;
+            bottom: -40px;
+        }
+        @include all-below-med{
+            max-width: 400px;
+            bottom: -20px;
+        }
+    }
+    .banner-content{
+        margin-top: -60px;
+        h2 {
+            @extend %white-color;
+            font-size: 53px;
+            font-family: $title-font;
+            margin-bottom: 10px;
+            @include all-below-med{
+                font-size: 46px;
+            }
+        }
+        h3 {
+            font-size: 36px;
+            @extend %white-color;
+            font-family: $title-font;
+            margin-bottom: 32px;
+            @include all-below-med{
+                font-size: 32px;
+            }
+        }
+        .boxed-btn {
+            @extend %secondary-border-color;
+            padding: 16px 35px;
+            @extend %borderradius50;
+            @extend %secondary-bg-color;
+            @extend %primary-color;
+            &:hover {
+                @extend %bgtransparent;
+                @extend %secondary-border-color;
+                @extend %secondary-color;
+            }
+        }
+    }
+}
+
+// .credit-score-area 
+.credit-score-area {
+    padding: 100px 0 130px;
+    @extend %posrelative;
+    z-index: 2;
+    &:after {
+        @extend %pseudo;
+        right: 0;
+        top: 0;
+        @extend %h100;
+        @extend %w100;
+        @extend %primary-bg-color;
+        clip-path: polygon(0 92%, 100% 0%, 100% 100%, 0% 100%);
+        z-index: -1;
+    }
+    .section-title {
+        margin-bottom: 20px;
+    }
+    .boxed-btn {
+        margin-top: 25px;
+    }
+    .content1 {
+        flex-basis: 380px;
+        @extend %posrelative;
+        z-index: 3;
+        padding-bottom: 15px;
+        @include mx-desktops{
+            flex-basis: 260px;
+            img{
+                max-width: 260px;
+            }
+        }
+    }
+    .content2 {
+        @extend %posabsolute;
+        left: 44%;
+        bottom: 0;
+        transform: translate(-50%, 0px);
+        z-index: 2;
+        width: 480px;
+        @include mx-desktops{
+            left: 34%;
+        }
+    }
+    .content3 {
+        width: 360px;
+        padding-bottom: 20px;
+        @extend %posrelative;
+        z-index: 3;
+        .single-score-item {
+            background: #2A2E36;
+            @extend %white-color;
+            font-size: 15px;
+            padding: 15px 20px;
+            margin-top: 42px;
+            @extend %posrelative;
+            h3 {
+                font-size: 24px;
+                margin: 0 0 8px;
+            }
+            &:nth-child(1) {
+                left: -287px;
+            }
+            &:nth-child(2) {
+                left: -182px;
+            }
+            &:nth-child(3) {
+                left: -106px;
+            }
+        }
+    }
+}
+
+// about-us-video-area video-2
+.about-us-video-area {
+    &.video-2{
+        height: 420px;
+        @include all-below-med{
+            height: 320px;
+        }
+        .about-video-icon {
+            width: 70px;
+            height: 70px;
+            line-height: 65px;
+            font-size: 24px;
+            margin-top: -35px;
+        }
+    }
+}
+
+// services-area
+.services-area{
+    &.finance-service{
+        .service-bg{
+            height: 450px;
+        }
+        .service-content {
+            margin: 0px 0 0 40px;
+            @include mx-desktops{
+                margin: 0px 0 0 30px;
+            }
+            @include all-below-med{
+                margin: 30px 0 50px 0px;
+            }
+            &.left-content {
+                margin: 0px 90px 0 0px;
+                @include mx-desktops{
+                    margin: 0px 30px 0 0px;
+                }
+                @include all-below-med{
+                    margin: 30px 0 50px 0px;
+                }
+            }
+        }
+    }
+}
+
+
