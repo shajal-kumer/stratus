@@ -15,6 +15,13 @@
     <link href="./theme/css/antares.min.css" rel="stylesheet">
     <link href="css/client.min.css" rel="stylesheet">
 
+    <style>
+.homepage-slider-area, .hero-video__media, .hero-video  {
+    height: 100vh;
+}
+
+    </style>
+
     <!--Core jQuery-->
     <script src="./theme/js/jquery-3.3.1.slim.min.js"></script>
     <script src="./theme/js/jquery-migrate-1.4.1.min.js"></script>
@@ -102,12 +109,17 @@
 
             <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/qZjaytzyH44?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=qZjaytzyH44" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe> -->
 
+ <!-- <video class="hero-video__media" controls="true" autoplay="true" loop="true" muted="false" playsinline>
+                <source src="https://youtu.be/qZjaytzyH44">
+            </video> -->
 
-            <div class="video-background">
+            <video autoplay="true"   class="youtube-video" data-yt2html5="https://youtu.be/qZjaytzyH44"></video>
+
+            <!-- <div class="video-background">
                 <div class="video-foreground">
                     <div id="player"></div>
                 </div>
-            </div>
+            </div> -->
         </div>
         <!-- Hide slider text for now -->
         <!-- <div class="homepage-slides-wrapper custom-vh-100">
@@ -561,7 +573,7 @@
     <script src="./js/stratus.js"></script>
 
     <!-- JS code for Iframe video  -->
-    <script>
+    <!-- <script>
         var tag = document.createElement('script');
         tag.src = "https://www.youtube.com/iframe_api";
         var firstScriptTag = document.getElementsByTagName('script')[0];
@@ -601,7 +613,12 @@
         function stopVideo() {
             player.stopVideo();
         }
-    </script>
+    </script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@thelevicole/youtube-to-html5-loader@4.0.0/dist/YouTubeToHtml5.min.js"></script>
+
+<script>new YouTubeToHtml5({   
+    selector: '.youtube-video',
+  });</script>
 </body>
 
 </html>
