@@ -16,7 +16,7 @@
     <link href="css/client.min.css" rel="stylesheet">
 
     <style>
-.homepage-slider-area, .hero-video__media, .hero-video  {
+.homepage-slider-area,  .hero-video, .youtube-video  {
     height: 100vh;
 }
 
@@ -107,8 +107,7 @@
         <div class="hero-video overflow-hidden position-relative">
             <div class="hero-bg" style="background-image: url(img/stock-footage-still.jpg);"></div>
 
-       
-
+    
             <video autoplay playsinline muted  class="youtube-video" data-yt2html5="https://youtu.be/qZjaytzyH44"><p>Your browser doesn’t support HTML5 video.</p> </video>
 
         </div>
@@ -605,11 +604,11 @@
             player.stopVideo();
         }
     </script> -->
-    <script src="https://cdn.jsdelivr.net/npm/@thelevicole/youtube-to-html5-loader@4.0.0/dist/YouTubeToHtml5.min.js"></script>
+    <script src="./theme/js/youtubetohtml5.min.js"></script>
 
 <script>new YouTubeToHtml5({   
     selector: '.youtube-video',
   });</script>
 </body>
 
-</html>
+</html
